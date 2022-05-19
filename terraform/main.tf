@@ -10,7 +10,6 @@ resource "aws_instance" "ec2-prod" {
     host = aws_instance.ec2-prod.public_ip
     private_key = file("~/testec2.pem")
     user = "ec2-user"
-    access_key = "AKIAIOSFODNN7EXAMPLX"
   }
 
   provisioner "remote-exec" {
