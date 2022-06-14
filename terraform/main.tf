@@ -9,7 +9,6 @@ resource "aws_instance" "ec2-prod" {
     type = "ssh"
     host = aws_instance.ec2-prod.public_ip
     private_key = file("~/testec2.pem")
-    echo AKIAIOSFODNN7EXAMPLX > filecredentialtemp.txt
     user = "ec2-user"
   }
 
