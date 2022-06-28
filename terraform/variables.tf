@@ -5,7 +5,7 @@ data "aws_ami" "ami" {
   filter {
     name = "name"
     values = ["amzn2-ami-hvm-2.0.20200722.0-x86*"]
-    access_key = "AKIAIOSFODNN7EXAMPLX"
+    
   }
 }
 
